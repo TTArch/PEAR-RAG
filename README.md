@@ -15,7 +15,7 @@ python path_llama.py
 sh train.sh
 ```
 ## evaluation
-The experimental validation code consists of two parts: the multi-document multi-position MDQA task and the long-context QA task, referring to the experimental setup of [lost-in-the-middle](https://github.com/nelson-liu/lost-in-the-middle)).
+The experimental validation code consists of two parts: the multi-document multi-position MDQA task and the long-context QA task, referring to the experimental setup of [lost-in-the-middle](https://github.com/nelson-liu/lost-in-the-middle).
 
 ### MDQA
 test:
