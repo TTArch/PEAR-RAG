@@ -7,41 +7,32 @@ The codes are implemented using PyTorch. The code for detecting heads, which sup
 
 ```bash
 python path_llama.py
-bash
 ```
-## Coefficients Re-weighting
+## Coefficients Re-weight
 
-train
-
-bash
+### train
 ```bash
 sh train.sh
-evaluation
-实验验证的代码由两部分组成，分别是多文档多位置的 MDQA 任务和长上下文 QA 任务，我们参考了 lost-in-the-middle{} 的实验设置。
+```
+## evaluation
+The experimental validation code consists of two parts: the multi-document multi-position MDQA task and the long-context QA task, referring to the experimental setup of "lost-in-the-middle".
 
-MDQA
+### MDQA
 test:
-代码：
-
-bash
-复制代码
+```bash
 sh mdqa_llama.sh
+```
 eval:
-代码：
-
-bash
-复制代码
+```bash
 python eval.py
-长上下文QA
+```
+### long-context QA
 test:
-代码：
-
-bash
-复制代码
+```bash
 CUDA_VISIBLE_DEVICES=0 python all_longma_pred.py --model longma2-30
-eval:
-代码：
+```
 
-bash
-复制代码
+eval:
+```bash
 python em_eval.py --model model
+```
