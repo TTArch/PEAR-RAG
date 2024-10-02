@@ -1,6 +1,6 @@
 # PEAR: POSITION-EMBEDDING-AGNOSTIC ATTENTION RE-WEIGHTING ENHANCES RETRIEVAL-AUGMENTED GENERATION WITH ZERO INFERENCE OVERHEAD
 
-The codes are implemented using PyTorch. The code for detecting heads, which suppresses the models' context awareness, is based on the work of Wang et al. and Lv et al. I have fixed some bugs, made it more efficient for inference, and enabled model-parallelism to support multiple GPUs. We have completed the assembly of Baichuan and set up a proxy task focused on context copying.
+The codes are implemented using PyTorch. The code for detecting heads, which suppresses the models' context awareness, is based on the work of [Wang et al.](https://github.com/redwoodresearch/Easy-Transformer) and [Lv et al.](https://github.com/trestad/Factual-Recall-Mechanism) We have completed the assembly of Baichuan-13B-chat and set up a proxy task focused on context copying.
 
 
 ## Detect heads
@@ -15,7 +15,7 @@ python path_llama.py
 sh train.sh
 ```
 ## evaluation
-The experimental validation code consists of two parts: the multi-document multi-position MDQA task and the long-context QA task, referring to the experimental setup of "lost-in-the-middle".
+The experimental validation code consists of two parts: the multi-document multi-position MDQA task and the long-context QA task, referring to the experimental setup of [lost-in-the-middle]([https://github.com/redwoodresearch/Easy-Transformer](https://github.com/nelson-liu/lost-in-the-middle)).
 
 ### MDQA
 test:
