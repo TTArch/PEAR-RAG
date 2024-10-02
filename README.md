@@ -8,6 +8,9 @@ The codes are implemented using PyTorch. The code for detecting heads, which sup
 ```bash
 python path_llama.py
 bash
+```
+## Coefficients Re-weighting
+
 train
 
 bash
