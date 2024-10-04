@@ -29,5 +29,3 @@ print(data)
 
 # with open("./randomdatasets/dataset_test.pkl", "wb") as f:
 #     pickle.dump(data, f)
-
-print("数据集已生成并保存到dataset.pkl")
